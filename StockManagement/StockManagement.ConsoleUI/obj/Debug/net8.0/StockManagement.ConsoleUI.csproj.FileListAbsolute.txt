@@ -1,0 +1,14 @@
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\bin\Debug\net8.0\StockManagement.ConsoleUI.exe
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\bin\Debug\net8.0\StockManagement.ConsoleUI.deps.json
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\bin\Debug\net8.0\StockManagement.ConsoleUI.runtimeconfig.json
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\bin\Debug\net8.0\StockManagement.ConsoleUI.dll
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\bin\Debug\net8.0\StockManagement.ConsoleUI.pdb
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.dll
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\refint\StockManagement.ConsoleUI.dll
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.pdb
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\StockManagement.ConsoleUI.genruntimeconfig.cache
+C:\Users\Administrator\source\repos\StockManagement\StockManagement.ConsoleUI\obj\Debug\net8.0\ref\StockManagement.ConsoleUI.dll
