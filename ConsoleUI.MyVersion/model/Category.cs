@@ -1,3 +1,6 @@
-﻿namespace StockManagement.ConsoleUI.model;
+﻿namespace ConsoleUI.MyVersion.Model;
 
-public record Category(int Id, string Name, string Description);
+public record Category(
+    int Id,
+    string Name,
+    string Description);

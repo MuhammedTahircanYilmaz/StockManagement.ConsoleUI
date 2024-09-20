@@ -1,4 +1,4 @@
-﻿namespace StockManagement.ConsoleUI.model;
+﻿namespace ConsoleUI.MyVersion.Model;
 
 public record Product(
     int Id,

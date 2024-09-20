@@ -1,11 +1,15 @@
-﻿using StockManagement.ConsoleUI.model;
+﻿using ConsoleUI.MyVersion.Model;
+using ConsoleUI.MyVersion.Data;
+using ConsoleUI.MyVersion.Service;
 using System;
 using System.Threading.Channels;
 
-namespace StockManagement.ConsoleUI.service;
+namespace ConsoleUI.MyVersion.Service;
 
 public class ProductService
 {
+    CategoryServiceMV categoryService = new CategoryServiceMV();
+    ProductData productData = new ProductData();
     Product Product;
     List<Product> Products;
 
@@ -16,6 +20,12 @@ public class ProductService
     public ProductService(List<Product> products)
     {
         Products = products;
+    }
+
+    public void AddProduct(List<Product> products)
+    {
+        Product createdProduct = GetProductInput(products);
+        productData.Add(createdProduct);
     }
 
     public int GetProductId(List<Product> products)
@@ -59,6 +69,22 @@ public class ProductService
         }
         int finalId = Convert.ToInt32(answerToCheck);
         return finalId;
+    }
+
+    public int GetCategoryId(List<Category> categories)
+    {
+        List<Category> categoryList = categoryService.GetAllCategories();
+        int id = 1;
+        Console.WriteLine("Categories are:");
+        categoryList.ForEach(x => { Console.WriteLine($"{id}-" + x.Name); id++; });
+
+        Console.WriteLine("Please input Category Id:");
+
+        string answerToCheck = GetAnswer(Console.ReadLine()); //the given answer is checked to see if it is empty, null or whitespace
+        bool isInt = CheckNumerical(answerToCheck);
+
+        int categoryId = Convert.ToInt32(Console.ReadLine());
+        return categoryId;
     }
 
     public bool CheckValidId(string idToBeChecked)
@@ -205,7 +231,6 @@ public class ProductService
         return true;
     }
 
-
     public string GetAnswer(string answerToCheck)
     {
         while (string.IsNullOrWhiteSpace(answerToCheck) || string.IsNullOrEmpty(answerToCheck))
@@ -220,14 +245,26 @@ public class ProductService
     {
         int id = GetProductId(products);
 
+        int categoryId = GetCategoryId();
+
         string name = GetProductName();
 
         double price = GetProductPrice();
 
         int stock = GetProductStock();
 
-        Product createdProduct = new Product(id, name, price, stock);
+        Product createdProduct = new Product(id, categoryId, name, price, stock);
 
         return createdProduct;
     }
+
+    public void GetAllProductNameContains(string text)
+    {
+        List<Product>filteredProducts = productData.GetAllProductNameContains(text);
+        foreach (Product product in filteredProducts)
+        {
+            Console.WriteLine(product);
+        }
+    }
+
 }
